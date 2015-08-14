@@ -27,6 +27,8 @@ class ChopTest(unittest.TestCase):
         self.assertEqual(-1, chop(6, [1, 3, 5, 7]))
         self.assertEqual(-1, chop(8, [1, 3, 5, 7]))
         #
+        self.assertEqual(0, chop(1, range(1, 100000)))
+        #
         self.assertRaises(ValueError, chop, 'Bob', [1, 3, 5, 7])
         self.assertRaises(ValueError, chop, 5, ['Pete', 3, 5, 7])
 
