@@ -26,6 +26,9 @@ class ChopTest(unittest.TestCase):
         self.assertEqual(-1, chop(4, [1, 3, 5, 7]))
         self.assertEqual(-1, chop(6, [1, 3, 5, 7]))
         self.assertEqual(-1, chop(8, [1, 3, 5, 7]))
+        #
+        self.assertRaises(ValueError, chop, 'Bob', [1, 3, 5, 7])
+        self.assertRaises(ValueError, chop, 5, ['Pete', 3, 5, 7])
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,5 +1,15 @@
 def chop(number, array_of_numbers):
 
+    try:
+        int(number) + 1
+    except ValueError:
+        raise ValueError('number must be an integer')
+
+    try:
+        [int(x) for x in array_of_numbers]
+    except ValueError:
+        raise ValueError('array_of_numbers must contain a list of integers')
+
     if number not in array_of_numbers:
         return -1
     else:
