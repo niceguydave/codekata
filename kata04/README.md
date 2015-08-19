@@ -4,4 +4,4 @@ This directory contains a Python implementation of the kata at http://codekata.c
 Run `python tests.py` to check whether the tests work.
 
 ## Getting the answers
-Call 'python functions.py'
+Call `python functions.py`
